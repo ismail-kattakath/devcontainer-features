@@ -1,0 +1,35 @@
+{
+    "install_latest_jammy": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+        "features": {
+            "ghcr.io/devcontainers/features/node:1": {
+                "version": "lts"
+            },
+            "cline": {
+                "version": "latest"
+            }
+        }
+    },
+    "install_latest_noble": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+        "features": {
+            "ghcr.io/devcontainers/features/node:1": {
+                "version": "lts"
+            },
+            "cline": {
+                "version": "latest"
+            }
+        }
+    },
+    "install_latest_bookworm": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian-12",
+        "features": {
+            "ghcr.io/devcontainers/features/node:1": {
+                "version": "lts"
+            },
+            "cline": {
+                "version": "latest"
+            }
+        }
+    }
+}

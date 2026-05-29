@@ -1,0 +1,9 @@
+# Dev Container worktrees
+.claude/worktrees/
+
+# Local Claude Code settings (personal overrides, not shared)
+.claude/settings.local.json
+.claude/agent-memory-local/
+
+# Node
+node_modules/

@@ -1,0 +1,25 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/scripts/shellcheck-on-save.sh",
+            "statusMessage": "shellcheck"
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(git *)",
+      "Bash(npm *)",
+      "Bash(shellcheck *)",
+      "Bash(chmod +x *)",
+      "Bash(devcontainer *)"
+    ]
+  }
+}

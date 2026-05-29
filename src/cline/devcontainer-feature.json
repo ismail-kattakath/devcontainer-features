@@ -1,0 +1,30 @@
+{
+    "$schema": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainerFeature.v0.schema.json",
+    "id": "cline",
+    "version": "1.0.0",
+    "name": "Cline CLI",
+    "description": "Installs the Cline AI coding assistant CLI globally via npm. Requires Node.js 20+.",
+    "documentationURL": "https://github.com/ismail-kattakath/devcontainer-features/tree/main/src/cline",
+    "licenseURL": "https://github.com/ismail-kattakath/devcontainer-features/blob/main/LICENSE",
+    "keywords": [
+        "cline",
+        "ai",
+        "cli",
+        "coding-assistant",
+        "llm",
+        "agentic"
+    ],
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Version of the Cline CLI to install. Use 'latest' for the most recent release, or pin a specific version (e.g. '3.14.0')."
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/node"
+    ]
+}

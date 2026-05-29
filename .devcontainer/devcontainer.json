@@ -1,0 +1,23 @@
+{
+    "name": "devcontainer-features (dev)",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+    "features": {
+        "ghcr.io/devcontainers/features/node:2.0.0": {
+            "version": "lts"
+        },
+        "ghcr.io/devcontainers/features/github-cli:1": {},
+        "ghcr.io/devcontainers/features/docker-in-docker:3.0.1": {},
+        "ghcr.io/ismail-kattakath/devcontainer-features/cline:1": {}
+    },
+    "postCreateCommand": "npm install -g @devcontainers/cli",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-azuretools.vscode-docker",
+                "github.vscode-github-actions",
+                "timonwong.shellcheck",
+                "fuadpashayev.bottom-terminal"
+            ]
+        }
+    }
+}
