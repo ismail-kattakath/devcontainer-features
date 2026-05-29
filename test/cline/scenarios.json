@@ -31,5 +31,27 @@
                 "version": "latest"
             }
         }
+    },
+    "install_latest_focal": {
+        "image": "ubuntu:20.04",
+        "features": {
+            "ghcr.io/devcontainers/features/node:1": {
+                "version": "lts"
+            },
+            "cline": {
+                "version": "latest"
+            }
+        }
+    },
+    "install_latest_bullseye": {
+        "image": "debian:bullseye",
+        "features": {
+            "ghcr.io/devcontainers/features/node:1": {
+                "version": "lts"
+            },
+            "cline": {
+                "version": "latest"
+            }
+        }
     }
 }
