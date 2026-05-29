@@ -14,7 +14,7 @@ When invoked, you will receive the name of a feature to validate (or "all").
 
 ### 1. Manifest (`devcontainer-feature.json`)
 - [ ] Valid JSON (parseable)
-- [ ] Has `$schema` field pointing to official schema
+- [ ] Does NOT contain a `$schema` key (the Feature schema is additionalProperties:false — a `$schema` field fails validation)
 - [ ] `id` matches directory name
 - [ ] `version` is semver
 - [ ] `name` is human-readable
