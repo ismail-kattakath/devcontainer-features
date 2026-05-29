@@ -1,5 +1,4 @@
 {
-    "$schema": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainerFeature.v0.schema.json",
     "id": "cline",
     "version": "1.0.0",
     "name": "Cline CLI",
